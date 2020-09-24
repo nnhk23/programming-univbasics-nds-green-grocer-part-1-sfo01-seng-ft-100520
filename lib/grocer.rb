@@ -12,17 +12,18 @@ end
 def consolidate_cart(cart)
   receipt = []
   i = 0 
-  number = 0 
   while i < cart.length do
     receipt << cart[i]
-    number = cart.count{|h|
-      h[:item] 
-    }
+    if cart[i][:item] 
+      cart[i][:count] += 1 
+    else
+      cart[i][:count] = 1
+    end
     i += 1
   end
-  number
+  receipt
   binding.pry
 end
 
-cart[i][:count] = 
+
   
