@@ -12,6 +12,9 @@ end
 def consolidate_cart(cart)
   receipt = []
   i = 0 
+  cart.each do |h|
+    h[:count] = 0 
+  end
   while i < cart.length do
     receipt << cart[i]
     if cart[i][:item] 
