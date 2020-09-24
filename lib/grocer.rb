@@ -15,7 +15,7 @@ def consolidate_cart(cart)
   number = 0 
   while i < cart.length do
     receipt << cart[i]
-    number = cart.count(count[i][:item])
+    number = cart.count(|item|)
     i += 1
   end
   number
