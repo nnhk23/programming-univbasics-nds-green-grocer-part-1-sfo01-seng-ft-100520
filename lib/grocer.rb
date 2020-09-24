@@ -15,7 +15,7 @@ def consolidate_cart(cart)
   while i < cart.length do
     receipt << cart[i]
     if cart[i][:item]!
-      cart[i][:count] = 0
+      cart[i][:count]
     end
     i += 1
   end
