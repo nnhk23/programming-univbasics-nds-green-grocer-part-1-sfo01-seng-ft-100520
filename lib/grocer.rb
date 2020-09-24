@@ -14,10 +14,11 @@ def consolidate_cart(cart)
   i = 0 
   while i < cart.length do
     receipt << cart[i]
+    if 
     i += 1
   end
   receipt
-  binding.pry
+  #binding.pry
 end
 
 
