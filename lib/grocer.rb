@@ -18,11 +18,9 @@ def consolidate_cart(cart)
     number = cart.count(count[i][:item])
     i += 1
   end
-  receipt
   number
   binding.pry
 end
-binding.pry
 
 
   
